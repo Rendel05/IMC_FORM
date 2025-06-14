@@ -38,6 +38,7 @@
             this.lblSancada = new System.Windows.Forms.Label();
             this.txtZancada = new System.Windows.Forms.TextBox();
             this.btbCalc = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIntro
@@ -119,19 +120,30 @@
             // 
             // btbCalc
             // 
-            this.btbCalc.Location = new System.Drawing.Point(188, 533);
+            this.btbCalc.Location = new System.Drawing.Point(246, 541);
             this.btbCalc.Name = "btbCalc";
-            this.btbCalc.Size = new System.Drawing.Size(75, 23);
+            this.btbCalc.Size = new System.Drawing.Size(100, 25);
             this.btbCalc.TabIndex = 9;
             this.btbCalc.Text = "Calcular";
             this.btbCalc.UseVisualStyleBackColor = true;
             this.btbCalc.Click += new System.EventHandler(this.btbCalc_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(40, 541);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(125, 25);
+            this.btnLimpiar.TabIndex = 10;
+            this.btnLimpiar.Text = "Limpiar campos";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 653);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btbCalc);
             this.Controls.Add(this.txtZancada);
             this.Controls.Add(this.lblSancada);
@@ -143,7 +155,7 @@
             this.Controls.Add(this.lblIMC);
             this.Controls.Add(this.lblIntro);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora IMC";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Label lblSancada;
         private System.Windows.Forms.TextBox txtZancada;
         private System.Windows.Forms.Button btbCalc;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
